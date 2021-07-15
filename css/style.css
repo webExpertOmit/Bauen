@@ -1,0 +1,1358 @@
+/*
+===========================
+Common CSS Start Here
+===========================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    overflow-x: hidden !important;
+    background: #272727;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Oswald', sans-serif;
+}
+
+.primary-color {
+    color: #b19777;
+}
+
+.section-title {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    color: #b19777;
+}
+
+.p80 {
+    padding: 80px 0px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    widows: 4px;
+    height: 10px;
+    border: 1px solid #b19777;
+    background: none;
+    border-radius: 50%;
+
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: 0;
+}
+
+
+.owl-carousel .owl-nav button.owl-next {
+    border: 1px solid #b19777;
+    border-radius: 50%;
+    outline: 0;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    border: 1px solid #b19777;
+    border-radius: 50%;
+    outline: 0;
+}
+
+
+[class^="ti-"],
+[class*=" ti-"] {
+    font-family: 'themify';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 10px;
+}
+
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.owl-nav {
+    position: absolute;
+    bottom: 3%;
+    left: 12%;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    width: 40px;
+    height: 40px;
+    line-height: 34px;
+    background: transparent;
+    border-radius: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 11px;
+    margin-right: 3px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.0);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    transform: scale(0.9);
+    background: transparent;
+    border: 1px solid #b19777;
+    color: #b19777;
+}
+
+
+.banner-section {
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    z-index: -2;
+}
+
+.banner-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(39, 39, 39, .9),
+            rgba(39, 39, 39, 1));
+}
+
+
+.content-wrapper {
+    position: relative;
+}
+
+
+
+.content-lines-wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.content-lines-inner {
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    margin-left: -570px;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+}
+
+
+.content-lines {
+    position: absolute;
+    left: 33.666666%;
+    right: 33.666666%;
+    height: 100%;
+    border-left: 1px solid #323232;
+    border-right: 1px solid #323232;
+}
+
+
+/*
+===========================
+Common CSS End Here
+===========================
+*/
+
+
+/*
+===========================
+Main menu CSS Start Here
+===========================
+*/
+.header-section {
+    position: relative;
+}
+
+.main-menu {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-menu {
+    margin: -10px;
+}
+
+.main-menu .logo {
+    background: #272727;
+    padding: 35px;
+    text-align: center;
+}
+
+.main-menu .logo a {
+    text-decoration: none;
+}
+
+.main-menu .logo h1 {
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-menu .logo span {
+    color: #999;
+    letter-spacing: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main-menu ul {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.main-menu ul li {
+    padding: 0px 10px;
+}
+
+.main-menu ul li a {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    transition: .4s;
+}
+
+.main-menu ul li a:hover {
+    color: #b19777;
+}
+
+.main-menu .nav-icon {
+    color: #b19777;
+}
+
+.nav-icon:focus {
+    outline: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu a {
+    background: none;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #f1f1f1;
+}
+
+.dropdown-menu {
+    background: #272727;
+}
+.dropdown .login{
+    text-transform: capitalize;
+}
+
+
+.fixed .main-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #000;
+    z-index: 999;
+    padding: 0;
+    transition: .4s;
+}
+
+.fixed .menu {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.fixed .main-menu .logo {
+    left: 0;
+    position: inherit;
+    background: none;
+    padding: 10px 0px;
+}
+
+.fixed .logo h1 {
+    display: none;
+}
+
+.fixed .logo span {
+    display: none;
+}
+
+/*
+===========================
+Main menu CSS End Here
+===========================
+*/
+
+
+
+
+/*
+===========================
+Slider CSS Start Here
+===========================
+*/
+.slider-item img {
+    width: 100%;
+    height: 100vh;
+}
+
+.slider-item::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    text-align: right;
+    color: #fff;
+    transform: translate(0%, -50%)
+}
+
+.slider-content h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.35em;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+.slider-content p {
+    font-size: 18px;
+    line-height: 1.75em;
+    margin-bottom: 0;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.slider-content button {
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    outline: inherit;
+    margin-top: 25px;
+    transition: .4s;
+}
+
+.slider-content button:hover {
+    background: #fff;
+    color: #999;
+}
+
+.slider-icon {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    text-align: center;
+}
+
+.slider-icon li {
+    list-style: none;
+    padding: 3px 0px;
+}
+
+.slider-icon li a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #373737;
+    color: #999;
+    border-radius: 100%;
+    transition: all .4s;
+    padding: 5px 8px;
+}
+
+.slider-icon li a:hover {
+    color: #b19777;
+    border: 1px solid #b19777;
+}
+
+.icon-div {
+    width: .3px;
+    height: 70px;
+    background: #b19777;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/*
+===========================
+Slider CSS End Here
+===========================
+*/
+
+
+
+
+
+
+
+/*
+===========================
+About CSS Start Here
+===========================
+*/
+.about-img {
+    padding: 15px;
+}
+
+.about-img img {
+    transition: .8s;
+}
+
+.about-img img:hover {
+    transform: scale(.95);
+}
+
+.about-img .about-btn {
+    width: 40% !important;
+    position: absolute;
+    bottom: -15px;
+    right: 65px;
+    z-index: 3;
+    padding: 20px 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 1.5em;
+    text-align: center;
+    background: #323232;
+}
+
+/*
+===========================
+About CSS End Here
+===========================
+*/
+
+
+
+
+
+/*
+===========================
+Projects CSS Start Here
+===========================
+*/
+.project-section .project-item {
+    position: relative;
+    margin-top: 25px;
+}
+
+.project-section .project-item .con {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.project-section .project-item .con a {
+    text-decoration: none;
+}
+
+.project-section .project-item .con h6 a {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: #b19777;
+}
+
+.project-section .project-item .con h5 a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.project-section .project-item .con .style {
+    width: 70px;
+    height: .5px;
+    background: #b19777;
+    margin: auto;
+    transition: .4s;
+    transition-delay: .4s;
+    margin-top: 15px;
+}
+
+.link i {
+    color: #fff;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.project-section .project-item .con {
+    background: linear-gradient(rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, .4));
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: -30px;
+    transition: .4s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project-item {
+    overflow: hidden;
+    margin: 0px 10px;
+}
+
+.project-item:hover .con {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0, 0, 0, .1),
+            rgba(0, 0, 0, .7));
+}
+
+.project-item img {
+    transition: .4s;
+}
+
+.project-item:hover img {
+    transform: scale(1.2);
+}
+
+.project-item:hover .con .style {
+    width: 100%;
+}
+
+/*
+===========================
+Projects CSS End Here
+===========================
+*/
+
+
+
+
+
+/*
+===========================
+Services CSS Start Here
+===========================
+*/
+.services-section .services-area .style {
+    width: 70px;
+    height: .5px;
+    background: #b19777;
+    transition: .4s;
+    transition-delay: .1s;
+}
+
+.services-area {
+    padding: 20px;
+    margin-top: 15px;
+    transition: .4s;
+}
+
+.services-area a {
+    text-decoration: none;
+    color: #999;
+}
+
+.services-area h5 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.services-area p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    margin-top: 25px;
+}
+
+.services-area .numb {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    line-height: 1em;
+}
+
+.services-area:hover .style {
+    width: 100%;
+}
+
+.services-area:hover {
+    background: #323232;
+
+}
+
+/*
+===========================
+Services CSS End Here
+===========================
+*/
+
+
+
+
+/*
+===========================
+News CSS Start Here
+===========================
+*/
+.news-area .news-item span {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.news-area .news-item h5 a {
+    color: #b19777;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.news-item {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.news-area .news-item .news-con {
+    margin: -120px 20px 75px;
+    padding: 15px 15px 25px 15px;
+    background-color: #323232 !important;
+    border: 1px solid #323232;
+    border-radius: 0;
+    overflow: hidden;
+    transition: .2s cubic-bezier(.3, .58, .55, 1);
+    bottom: -55px;
+    position: relative;
+}
+
+.news-area .news-item img {
+    transition: .4s;
+}
+
+.news-area .news-item:hover img {
+    transform: scale(1.1);
+}
+
+.news-area .news-item:hover .news-con {
+    bottom: 10px;
+}
+
+/*
+===========================
+News CSS End Here
+===========================
+*/
+
+
+/*
+===========================
+Clients CSS Start Here
+===========================
+*/
+.clients-section {
+    background-image: url(../img/slider2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 80px;
+
+}
+
+.clients-section::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.video-area i {
+    padding: 40px;
+    border-radius: 50%;
+    background: rgba(177, 151, 119, .9);
+    font-size: 35px;
+    color: #fff;
+}
+
+.video-area h5 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.client-area h4 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 5px;
+    border-bottom: 1px solid #373737;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.client-area {
+    background: #272727;
+    padding: 60px 40px;
+}
+
+.client-item p {
+    margin-top: 25px;
+}
+
+.client-item img {
+    border-radius: 50%;
+}
+
+.client-item h6 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-top: 7px;
+    font-weight: 400;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #b19777;
+}
+
+.client-item span {
+    font-size: 14px;
+    color: #999;
+    line-height: 1.25em;
+}
+
+.client-logo {
+    background: #323232;
+    margin-top: -80px;
+}
+
+.client-logo img {
+    padding: 10px;
+}
+
+/*
+===========================
+Clients CSS End Here
+===========================
+*/
+
+
+
+/*
+===========================
+Footer CSS Start Here
+===========================
+*/
+.top-footer-section {
+    background: #272727;
+    padding: 50px 0px;
+    box-shadow: 0px 0px .8px 0px #b19777;
+}
+
+.bottom-footer-section {
+    padding-top: 15px;
+}
+
+.bottom-footer-section ul {
+    justify-content: flex-end;
+    width: 100%;
+    display: flex;
+}
+
+.bottom-footer-section ul li {
+    list-style: none;
+    padding: 3px 8px;
+}
+
+.bottom-footer-section ul li a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #373737;
+    color: #999;
+    border-radius: 100%;
+    transition: all .4s;
+    padding: 5px 8px;
+}
+
+.bottom-footer-section ul li a:hover {
+    color: #b19777;
+    border: 1px solid #b19777;
+}
+
+/*
+===========================
+Footer CSS End Here
+===========================
+*/
+
+
+/*
+===========================
+===========================
+About page CSS End Here
+===========================
+===========================
+*/
+
+
+.team-content {
+    text-align: center;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-social {
+    position: absolute;
+    padding: 20px 20px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #323232;
+    transition: all .4s;
+}
+
+.team-social a {
+    color: #b19777;
+    transition: all .4s;
+}
+
+.team-social a:hover {
+    color: #fff;
+}
+
+.team-social ul {
+    justify-content: center;
+    width: 100%;
+}
+
+.team-item:hover .team-social {
+    top: 0;
+}
+
+.team-item {
+    padding: 15px;
+}
+
+
+
+
+/*
+===========================
+===========================
+About page CSS End Here
+===========================
+===========================
+*/
+
+
+
+
+/*
+===========================
+===========================
+Contact page CSS End Here
+===========================
+===========================
+*/
+.contact-area {
+    margin-top: 25px;
+}
+.contact-area h6 {
+    font-weight: 400;
+    color: #b19777;
+}
+
+.contact-area p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.contact-area p b {
+    font-weight: 400;
+    color: #b19777;
+}
+
+.contact-area input,textarea{
+    width: 100%;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: .5px solid #b19777;
+    background: none;
+    outline: 0;
+    color: #f1f1f1;
+}
+.contact-area button{
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border: none;
+    background:#b19777;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 3px;
+    outline: 0;
+    transition: .4s;
+}
+.contact-area button:hover{
+    background: #323232;
+}
+.map{
+   text-align: center;
+    position: relative;
+    
+}
+.google-map{
+    width: 100%;
+}
+
+/*
+===========================
+===========================
+Contact page CSS End Here
+===========================
+===========================
+*/
+
+
+/*
+===========================
+===========================
+Pricing page CSS End Here
+===========================
+===========================
+*/
+
+.pricing-card {
+    background-color: #323232;
+    padding: 60px 40px 40px 40px;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.pricing-card-name {
+    line-height: 1;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #b19777;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.pricing-card-amount {
+    margin: 0;
+    line-height: 1;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.pricing-card-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.butn-pricing a{
+    line-height: 1.2em;
+    background:#b19777; 
+    padding: 10px 25px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 25px;
+    transition: .4s;
+}
+.butn-pricing a:hover{
+    background: #222;
+}
+.pricing-card-list{
+    margin-bottom: 35px;
+}
+.pricing-card-list li i{
+    margin-right: 10px;
+}
+.pricing-card-list li{
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+/*
+===========================
+===========================
+Pricing page CSS End Here
+===========================
+===========================
+*/
+
+
+/*
+===========================
+===========================
+Gallery page CSS End Here
+===========================
+===========================
+*/
+.gallery-item{
+    overflow: hidden;
+    margin-top: 25px;
+}
+.gallery-item img{
+    transition: .4s;
+    position: relative;
+}
+.gallery-item img:hover{
+    transform: scale(1.1);
+}
+
+/*
+===========================
+===========================
+Gallery page CSS End Here
+===========================
+===========================
+*/
+
+
+/*
+===========================
+===========================
+Video page CSS End Here
+===========================
+===========================
+*/
+.video-item{
+    position: relative;
+    margin-top: 25px;
+}
+.video-icon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #b19777;
+    padding: 8px 15px;
+    border-radius: 50%;
+    transition: .4s;
+}
+.video-icon:hover{
+    background: #222;
+    border: 1px solid #222;
+}
+.video-icon a{
+    color: #fff;
+}
+
+/*
+===========================
+===========================
+Video page CSS End Here
+===========================
+===========================
+*/
+
+
+
+/*
+===========================
+===========================
+Testimonial page CSS End Here
+===========================
+===========================
+*/
+.testimonial-section .client-item{
+    background: #323232;
+    padding: 60px 25px;
+    margin-top: 25px;
+}
+
+/*
+===========================
+===========================
+Testimonial page CSS End Here
+===========================
+===========================
+*/
+
+
+
+/*
+===========================
+===========================
+Faqs page CSS End Here
+===========================
+===========================
+*/
+.faqs-item .card{
+    background: #323232;
+    margin-top: 20px;
+}
+.faqs-item .card .card-header h5 button{
+    color:#b19777;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.faqs-item .card .btn-link{
+    position: relative;
+    width: 100%;
+    text-align: left;
+    outline: inherit;
+    color: #999;
+    text-decoration: none;
+}
+.faqs-item .card .btn-link .fa{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    color:#b19777; 
+}
+
+.faqs-item {
+    margin-top: 50px;
+}
+
+
+/*
+===========================
+===========================
+Faqs page CSS End Here
+===========================
+===========================
+*/
+
+
+
+
+/*
+===================================
+===================================
+Services Details page CSS End Here
+===================================
+===================================
+*/
+.services-details-img{
+    overflow: hidden;
+    margin-top: 25px;
+}
+.services-details-img img{
+    transition: .4s;
+}
+.services-details-img img:hover{
+    transform: scale(1.1);
+}
+
+.services-sidebar{
+    padding: 50px 25px;
+    background:#323232; 
+}
+.services-sidebar h4{
+    padding: 5px 10px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.services-sidebar ul li a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #999;
+    letter-spacing: 2px;
+}
+
+.services-sidebar ul li a i{
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.services-sidebar ul li{
+    padding: 5px 10px;
+    list-style: none;
+    transition: .2s;
+    margin-top: 15px;
+}
+.services-sidebar ul li:hover{
+    background:#b19777; 
+    
+}
+.services-sidebar ul li:hover a{
+    color: #fff;
+}
+
+
+
+
+/*
+===================================
+===================================
+Services Details page CSS End Here
+===================================
+===================================
+*/
+
+
+
+
+
+
+/*
+====================================
+====================================
+Projects Details page CSS End Here
+====================================
+====================================
+*/
+.project-details-section b{
+    color:#b19777; 
+}
+.project-details-img{
+    overflow: hidden;
+    margin-top: 25px;
+}
+.project-details-img img{
+    transition: .4s;
+}
+
+.project-details-img img:hover{
+    transform: scale(1.1);
+}
+
+
+/*
+====================================
+====================================
+Projects Details page CSS End Here
+====================================
+====================================
+*/
+
+
+
+
+
+
+/*
+====================================
+====================================
+Blog Details page CSS End Here
+====================================
+====================================
+*/
+.blog-content{
+    margin-top: 50px;
+}
+
+
+/*
+====================================
+====================================
+Blog Details page CSS End Here
+====================================
+====================================
+*/
+
+
+
+
+
+

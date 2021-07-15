@@ -1,0 +1,131 @@
+ /*=====================================================================
+  Use a media query to add a breakpoint at min 1200px and max 2524px
+======================================================================*/
+ @media screen and (min-device-width: 1200px) and (max-device-width: 2524px) {}
+
+
+ /*=====================================================================
+  Use a media query to add a breakpoint at min 992px and max 1199px
+======================================================================*/
+ @media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+   
+}
+
+
+
+
+ /*=====================================================================
+  Use a media query to add a breakpoint at min 768px and max 991px
+======================================================================*/
+ @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+     .main-menu .logo {
+         padding: 15px;
+     }
+
+     .slider-content h1 {
+         font-size: 34px;
+     }
+
+     .section-title {
+         font-size: 34px;
+     }
+
+     .news-area .news-item h5 a {
+         font-size: 18px;
+     }
+
+     .fixed .menu {
+         max-width: 720px;
+         margin: auto;
+     }
+ }
+
+
+
+
+ /*=====================================================================
+  Use a media query to add a breakpoint at min 576px and max 767px
+======================================================================*/
+ @media screen and (min-device-width: 576px) and (max-device-width: 767px) {
+     .main-menu{
+         background:#272727;
+     }
+      .main-menu .logo span{
+           display: none;
+     }
+      .main-menu .logo h1{
+         
+          display: none;
+     }
+      .main-menu .logo {
+         padding: 10px;
+     }
+      .fixed .menu {
+         max-width: 540px;
+         margin: auto;
+     }
+     .menu {
+         max-width: 540px;
+         margin: auto;
+     }
+     .slider-content h1 {
+         font-size: 24px;
+         letter-spacing: 8px;
+     }
+     .bottom-footer-section{
+        text-align: center;
+     }
+     .bottom-footer-section ul{
+         justify-content: center;
+         width: 100%;
+     }
+     
+     
+}
+
+
+ /*=====================================================================
+  Use a media query to add a breakpoint at min 300px and max 575px
+======================================================================*/
+ @media screen and (min-device-width: 300px) and (max-device-width: 575px) {
+     
+      .main-menu{
+         background:#272727;
+     }
+      .main-menu .logo span{
+           display: none;
+     }
+      .main-menu .logo h1{
+         
+          display: none;
+     }
+      .main-menu .logo {
+         padding: 10px;
+     }
+      .fixed .menu {
+         max-width: 100%;
+         margin: auto;
+     }
+     .menu {
+         max-width: 100%;
+         margin: auto;
+     }
+     .slider-content h1 {
+         font-size: 20px;
+         letter-spacing: 8px;
+     }
+     .slider-content P{
+        font-size: 12PX;
+     }
+     .bottom-footer-section{
+        text-align: center;
+     }
+     .bottom-footer-section ul{
+         justify-content: center;
+         width: 100%;
+     }
+     .section-title{
+        font-size: 20PX;
+     }
+     
+}
